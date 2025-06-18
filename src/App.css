@@ -1,42 +1,146 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+} */
+
+
+.root {
+  height: 100%;
+  background: linear-gradient(45deg,#462F74,#71F8C2);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.nav-bar{
+  position:relative;
+  padding:20px 0 0 74px;
+  align-items: center;
+  display: flex;
+  font-family: 'Roboto',sans-serif;
+  color: white;
+  font-size: 20px;
+  gap:40px;
+  height: 10vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.join{
+  right:100px;
+  position: absolute;
+  margin-left: 100px;
+}
+
+.join-button{
+  font-family: 'Roboto',sans-serif;
+  color: white;
+  font-size: 20px;
+  cursor:pointer;
+  height:43px;
+  width:133px;
+  border-radius: 25px ;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.join-button:hover .arrow-icon{
+  rotate: -45deg;
+}
+
+.smaller-circle{
+  position: absolute;
+  right: 3px;
+  width: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.join-label{
+  position:absolute;
+  text-align: center;
+  width: 110px;
+  font-size:14px;
+  color: white;
+}
+
+.join-label::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.4s ease-in-out;
+}
+
+.join-button:hover .join-label::after {
+  width: 50%;
+}
+
+.arrow-icon{
+  color: black;
+  padding-bottom: 2px;
+  rotate:0deg;
+  transition: rotate 200ms ease-in-out;
+}
+
+.health-icon{
+  position: absolute;
+  transform: scale(1.2);
+  top:320px;
+  right:300px;
+  rotate: 0deg;
+  transition: rotate 800ms ease-in-out;
+}
+
+.health-icon:hover{
+  rotate: 180deg;
+}
+
+.main-text{
+  position: absolute;
+  top:200px;
+  left:40px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bolder;
+  font-size: 120px;
+  color: white;
+}
+
+.health-label {
+  font-weight:900;
+  background: linear-gradient(90deg, #ffffff, #ff85c0,#fefefe);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
   to {
-    transform: rotate(360deg);
+    background-position: -200% center;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.learn-more-label{
+  position: relative;
+  top:-60px;
+  left:30px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.lm{
+  text-decoration: underline;
 }
 
-.card {
-  padding: 2em;
+.try-now-button{
+  position:absolute;
+  right:300px;
+  bottom:100px;
 }
 
-.read-the-docs {
-  color: #888;
-}
