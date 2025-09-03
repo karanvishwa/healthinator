@@ -103,6 +103,7 @@
 }
 
 .main-text{
+  transform: scale(0.9);
   position: relative;
   left:40px;
   top:40px;
@@ -141,8 +142,8 @@
 .try-now-button{
   flex-grow: 1;
   position:absolute;
-  right:300px;
-  bottom: 170px;
+  right:220px;
+  bottom: 120px;
   display: flex;
   align-items: center;
   padding-top: 4rem;
@@ -175,6 +176,7 @@
 }
 
 .bottom-descriptions{
+  transform: scale(0.9);
   width: 800px;
   height: 300px;
   position: absolute;

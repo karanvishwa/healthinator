@@ -32,6 +32,7 @@ function Page1() {
       <div className='main-body'>
 
         <div className='left-content'>
+          
           <div className='main-text'>
             <span className='sub-header-content'>Know your </span>
             <span className='health-label'>HEALTH</span>
@@ -41,6 +42,7 @@ function Page1() {
               <span className='lm'>Learn More</span>
             </span>
           </div>
+
           <div className='bottom-descriptions'>
 
             <div className='individual-properties'>
