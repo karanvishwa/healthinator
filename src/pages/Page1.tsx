@@ -15,7 +15,15 @@ function Page1() {
   return (
     <>
       <div className='nav-bar'>
-        {names.map((name) => <div key={name} style={{cursor:'pointer'}} className='nav-options'>{name}</div>)}
+        {names.map((name) => <div style={{display:'flex',flexDirection:'column',marginTop:'100px'}}>
+        <div key={name} className='nav-options'>{name}</div>
+        <div className='options'>
+          <a>Option 1</a>
+          <a>Option 2</a>
+          <a>Option 3</a>
+          <a>Option 4</a>
+        </div>
+        </div>)}
         <div className='join'>
           <CustomButton label={"Join"} scale={1}></CustomButton>
         </div>
