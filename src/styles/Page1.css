@@ -90,10 +90,10 @@
 }
 
 .health-icon{
-  position: absolute;
-  transform: scale(1.2);
-  top:320px;
-  right:300px;
+  position: relative;
+  width: 50%;
+  left: 5rem;
+  top: 5rem;
   rotate: 0deg;
   transition: rotate 800ms ease-in-out;
 }
@@ -103,12 +103,12 @@
 }
 
 .main-text{
-  position: absolute;
-  top:200px;
+  position: relative;
   left:40px;
+  top:40px;
   font-family: 'Roboto',sans-serif;
   font-weight: bolder;
-  font-size: 120px;
+  font-size: 100px;
   color: white;
 }
 
@@ -131,7 +131,7 @@
   position: relative;
   top:-60px;
   left:30px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 .lm{
@@ -139,8 +139,67 @@
 }
 
 .try-now-button{
+  flex-grow: 1;
   position:absolute;
   right:300px;
-  bottom:100px;
+  bottom: 170px;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
 }
 
+
+/* Refactoring changes */
+
+.main-body{
+  /* background-color: red; */
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content{
+  position:relative;
+  /* background-color: blue; */
+  height: 100%;
+  width: 65vw;
+}
+
+.right-content{
+  position:relative;
+  /* background-color: yellow; */
+  height: 100%;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-descriptions{
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.individual-properties{
+  height: 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+}
+
+.individual-description{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: 'Roboto',sans-serif;
+  font-weight: lighter;
+  gap:10px;
+}
