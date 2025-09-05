@@ -7,6 +7,7 @@ import Page5 from './pages/Page5';
 import Page6 from './pages/Page6';
 import Page7 from './pages/Page7';
 import LiveGraph from './pages/graph';
+import AppDetails from './pages/AppDetails';
 
 function Routing() {
     return (
@@ -19,6 +20,7 @@ function Routing() {
             <Route path="/sixth" element={<Page6 />}/>
             <Route path="/seventh" element={<Page7 />}/>
             <Route path="/graph" element={<LiveGraph />}/>
+            <Route path="/details" element={<AppDetails />} />
         </Routes>
     );
 }

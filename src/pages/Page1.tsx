@@ -30,7 +30,7 @@ function Page1() {
             <br></br>
             <span className='learn-more-label' >
               <span>&rarr; </span>
-              <span className='lm'>Learn More</span>
+              <span className='lm'><a className='anchor-tag' style={{color:"white"}} href='/details'>Learn More</a></span>
             </span>
           </div>
 

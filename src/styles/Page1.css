@@ -7,13 +7,14 @@
 
 
 .root {
-  height: 100%;
+  min-height: 100vh;
   background: linear-gradient(45deg,#462F74,#71F8C2);
 }
+ 
 
 .nav-bar{
   position:relative;
-  padding:20px 0 0 74px;
+  padding:2vh 0 0 74px;
   align-items: center;
   display: flex;
   font-family: 'Roboto',sans-serif;
@@ -135,6 +136,7 @@
   font-size: 25px;
   font-weight: 500;
 }
+
 .lm{
   text-decoration: underline;
 }
@@ -154,7 +156,7 @@
 
 .main-body{
   /* background-color: red; */
-    height: 90vh;
+    height: 88vh;
     display: flex;
     flex-direction: row;
 }
@@ -235,4 +237,8 @@
     background-color: lightblue;
     cursor: pointer;
   }
+}
+
+.color{
+  color:#1fab68
 }
