@@ -3,6 +3,7 @@ import { HeaderNavigations } from "../components/HeaderNavigations"
 import { useNavigate } from "react-router-dom";
 import type { DataPoint } from "./graph";
 import { Bar, BarChart, CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
+import { CustomButton } from "../components/CustomButton";
 
 // import '../styles/Page4.css'
 function Page7() {
@@ -27,6 +28,9 @@ function Page7() {
     <>
       <div className='nav-bar'>
         <HeaderNavigations />
+        <div className='join'>
+          <CustomButton label={"Home"} scale={1}></CustomButton>
+        </div>
       </div>
       <div className='one-word'>
         <img className="rotating-icon" src="/assets/images/small_plus.svg"></img>

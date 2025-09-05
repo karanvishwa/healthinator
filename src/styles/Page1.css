@@ -5,50 +5,49 @@
   text-align: center;
 } */
 
-
 .root {
   min-height: 100vh;
-  background: linear-gradient(45deg,#462F74,#71F8C2);
+  background: linear-gradient(45deg, #462f74, #71f8c2);
 }
- 
 
-.nav-bar{
-  position:relative;
-  padding:2vh 0 0 74px;
+.nav-bar {
+  position: relative;
+  padding: 2vh 0 0 74px;
   align-items: center;
   display: flex;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 20px;
-  gap:40px;
+  gap: 40px;
   height: 10vh;
 }
 
-.join{
-  right:100px;
+.join {
+  right: 100px;
   position: absolute;
   margin-left: 100px;
 }
 
-.join-button{
-  font-family: 'Roboto',sans-serif;
+.join-button {
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 20px;
-  cursor:pointer;
-  height:43px;
-  width:133px;
-  border-radius: 25px ;
+  cursor: pointer;
+  height: 43px;
+  width: 95px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   background-color: black;
   box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+  padding-left: 30px;
 }
 
-.join-button:hover .arrow-icon{
+.join-button:hover .arrow-icon {
   rotate: -45deg;
 }
 
-.smaller-circle{
+.smaller-circle {
   position: absolute;
   right: 3px;
   width: 37px;
@@ -60,18 +59,18 @@
   background-color: white;
 }
 
-.join-label{
-  position:absolute;
+.join-label {
+  position: absolute;
   text-align: center;
-  width: 110px;
-  font-size:14px;
+  width: fit-content;
+  font-size: 14px;
   color: white;
 }
 
 .join-label::after {
   content: "";
   position: absolute;
-  left: 30px;
+  left: 0;
   bottom: -3px;
   width: 0%;
   height: 2px;
@@ -80,43 +79,104 @@
 }
 
 .join-button:hover .join-label::after {
-  width: 50%;
+  width: 110%;
 }
 
-.arrow-icon{
+.arrow-icon {
   color: black;
   padding-bottom: 2px;
-  rotate:0deg;
+  rotate: 0deg;
   transition: rotate 200ms ease-in-out;
 }
 
-.health-icon{
+.health-icon {
   position: relative;
   width: 50%;
   left: 5rem;
   top: 5rem;
   rotate: 0deg;
-  transition: rotate 800ms ease-in-out;
+  transition: top 500ms ease-in-out, left 500ms ease-in-out,
+    transform 500ms ease-in-out, rotate 800ms ease-in-out;
 }
 
-.health-icon:hover{
+.health-icon:hover {
   rotate: 180deg;
 }
 
-.main-text{
+.transitioned {
+  position: absolute;
+  top: 180px;
+  left: -650px;
+  transform: scale(2);
+  transition: top 500ms ease-in-out, left 500ms ease-in-out,
+  transform 500ms ease-in-out, rotate 800ms ease-in-out;
+}
+
+.register-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.registration-label {
+  font-size: 50px;
+  color: #0a2540;
+  font-weight: 600;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.login-inputs {
+  border: none;
+  width: 60%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: bold;
+  &:focus-visible{
+    outline: 3px solid darkcyan
+  }
+}
+
+.registration-buttons {
+  margin-top: 30px;
+  width: 65%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  background-color: #0a2540;
+  transition: background-color 100ms ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: black;
+  }
+}
+
+.main-text {
   transform: scale(0.9);
   position: relative;
-  left:40px;
-  top:40px;
-  font-family: 'Roboto',sans-serif;
+  left: 40px;
+  top: 40px;
+  font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 100px;
   color: white;
 }
 
 .health-label {
-  font-weight:900;
-  background: linear-gradient(90deg, #ffffff, #ff85c0,#fefefe);
+  font-weight: 900;
+  background: linear-gradient(90deg, #ffffff, #ff85c0, #fefefe);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,47 +189,46 @@
   }
 }
 
-.learn-more-label{
+.learn-more-label {
   position: relative;
-  top:-60px;
-  left:30px;
+  top: -60px;
+  left: 30px;
   font-size: 25px;
   font-weight: 500;
 }
 
-.lm{
+.lm {
   text-decoration: underline;
 }
 
-.try-now-button{
+.try-now-button {
   flex-grow: 1;
-  position:absolute;
-  right:220px;
+  position: absolute;
+  right: 220px;
   bottom: 120px;
   display: flex;
   align-items: center;
   padding-top: 4rem;
 }
 
-
 /* Refactoring changes */
 
-.main-body{
+.main-body {
   /* background-color: red; */
-    height: 88vh;
-    display: flex;
-    flex-direction: row;
+  height: 88vh;
+  display: flex;
+  flex-direction: row;
 }
 
-.left-content{
-  position:relative;
+.left-content {
+  position: relative;
   /* background-color: blue; */
   height: 100%;
   width: 65vw;
 }
 
-.right-content{
-  position:relative;
+.right-content {
+  position: relative;
   /* background-color: yellow; */
   height: 100%;
   width: 35vw;
@@ -177,7 +236,7 @@
   flex-direction: column;
 }
 
-.bottom-descriptions{
+.bottom-descriptions {
   transform: scale(0.9);
   width: 800px;
   height: 300px;
@@ -186,59 +245,59 @@
   left: 50px;
   display: flex;
   flex-direction: column;
-  gap:30px;
+  gap: 30px;
 }
 
-.individual-properties{
+.individual-properties {
   height: 75px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap:30px;
+  gap: 30px;
 }
 
-.individual-description{
+.individual-description {
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  gap:10px;
+  gap: 10px;
 }
 
-.nav-options{
+.nav-options {
   cursor: pointer;
 }
 
-.options-nav{
+.options-nav {
   visibility: hidden;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  background:rgba(91, 141, 154, 0.726);
-  color:white;
+  background: rgba(91, 141, 154, 0.726);
+  color: white;
   z-index: 999;
   width: 100px;
   font-size: 14px;
   border-radius: 5px;
-  &:hover{
+  &:hover {
     visibility: visible;
   }
 }
 
-.nav-options:hover ~ .options-nav{
+.nav-options:hover ~ .options-nav {
   visibility: visible;
 }
 
-.options-nav a{
+.options-nav a {
   padding: 8px;
-  &:hover{
+  &:hover {
     background-color: lightblue;
     cursor: pointer;
   }
 }
 
-.color{
-  color:#1fab68
+.color {
+  color: #1fab68;
 }

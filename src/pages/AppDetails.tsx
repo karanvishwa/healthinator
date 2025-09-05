@@ -15,6 +15,9 @@ function AppDetails() {
         <>
             <div className='nav-bar'>
                 <HeaderNavigations />
+                <div className='join'>
+                    <CustomButton label={"Home"} scale={1}></CustomButton>
+                </div>
             </div>
             <div className="data" style={{ fontSize: '25px', fontFamily: 'Roboto,san-serif', paddingLeft: '70px', paddingBottom: '50px', color: 'white' }}>
                 <h1 style={{ color: '#0A2540' }}>🩺 Welcome to Healthinator</h1><br />
@@ -60,7 +63,7 @@ function AppDetails() {
                 <p className="text-details">Take control of your health in just a few clicks.</p><br />
                 <br />
                 <div className="start-button">
-                    <CustomButton label={"Start"} scale={1.5} />
+                    <CustomButton label={"Start"} navigateTo="/second" scale={1.5} />
                 </div>
             </div>
 
