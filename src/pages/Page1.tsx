@@ -1,29 +1,20 @@
-import '../styles/Page1.css'
-import health from '../assets/images/Health_icon_svg.svg'
-import dna from '../assets/images/dna.svg'
-import heart from '../assets/images/heart.svg'
-import graph from '../assets/images/graph.svg'
+import health from '/assets/images/Health_icon_svg.svg'
+import dna from '/assets/images/dna.svg'
+import heart from '/assets/images/heart.svg'
+import graph from '/assets/images/graph.svg'
+// import "../styles/Page1.css"
 
 
 
 import { CustomButton } from '../components/CustomButton'
+import { HeaderNavigations } from '../components/HeaderNavigations'
 
 function Page1() {
-
-  const names = ['Products', 'Services', 'Overview', 'Support', 'Shop', 'Contact']
 
   return (
     <>
       <div className='nav-bar'>
-        {names.map((name) => <div style={{display:'flex',flexDirection:'column',marginTop:'100px'}}>
-        <div key={name} className='nav-options'>{name}</div>
-        <div className='options'>
-          <a>Option 1</a>
-          <a>Option 2</a>
-          <a>Option 3</a>
-          <a>Option 4</a>
-        </div>
-        </div>)}
+        <HeaderNavigations />
         <div className='join'>
           <CustomButton label={"Join"} scale={1}></CustomButton>
         </div>
@@ -32,7 +23,7 @@ function Page1() {
       <div className='main-body'>
 
         <div className='left-content'>
-          
+
           <div className='main-text'>
             <span className='sub-header-content'>Know your </span>
             <span className='health-label'>HEALTH</span>
@@ -53,7 +44,7 @@ function Page1() {
               </div>
             </div>
 
-            <div className='individual-properties' style={{gap:'20px'}}>
+            <div className='individual-properties' style={{ gap: '20px' }}>
               <img className='individual-img' src={heart}></img>
               <div className='individual-description'>
                 <h2><strong>Personalised Health Insights</strong></h2>
@@ -77,7 +68,7 @@ function Page1() {
           <img className='health-icon' src={health}></img>
 
           <div className='try-now-button'>
-            <CustomButton label={"Try Now"} scale={1.5} width='170px'></CustomButton>
+            <CustomButton label={"Try Now"} scale={1.5} width='170px' navigateTo={'/second'}></CustomButton>
             {/* <CustomButton label={"Try Now"} scale={1} width='170px'></CustomButton> */}
 
           </div>
