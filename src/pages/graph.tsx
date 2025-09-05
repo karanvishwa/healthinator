@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts"
 
 // Define type for each point
 export type DataPoint = { 
-  time: number;
+  time: string;
   value: number;
 };
 
@@ -14,7 +14,7 @@ export default function LiveGraph() {
   useEffect(() => {
     let x = 0;
     const interval = setInterval(() => {
-      setData((prev) => [...prev, { time: x++, value: Math.random() * 10 }]);
+      setData((prev) => [...prev, { time: "name", value: Math.random() * 10 }]);
     }, 1000);
 
     return () => clearInterval(interval);

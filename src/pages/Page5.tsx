@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { HeaderNavigations } from "../components/HeaderNavigations";
 
 // import '../styles/Page5.css'
@@ -5,8 +6,10 @@ function Page5() {
 
   const options = ['op1', 'op2', 'op3', 'op4']
 
+  const navigate = useNavigate()
+
   const handleClick = () => {
-    alert("clicked!")
+    navigate('/sixth')
   };
   return (
     <>

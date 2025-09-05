@@ -7,24 +7,28 @@ function Page6() {
 
   const navigate = useNavigate()
 
-//   useEffect(() => {
-//     setTimeout(()=>navigate("/seventh"),6000)
-//   }, []);
+  useEffect(() => {
+    setTimeout(()=>navigate("/seventh"),6000)
+  }, []);
 
 
   return (
     <>
-        <div className='nav-bar'>
-            <HeaderNavigations />
+      <div className='nav-bar'>
+        <HeaderNavigations />
+      </div>
+      <div className='one-word'>
+        <img className="rotating-icon" src="/assets/images/small_plus.svg"></img>
+        Response
+      </div>
+      <div className="rotating-center">
+        <div className="cover-circle"></div> 
+        <div>
+          <img className="rotating-icon1" src="/assets/images/small_plus.svg">
+          </img>
         </div>
-        <div className='one-word'>
-            <img className="rotating-icon" src="/assets/images/small_plus.svg"></img>
-            Response
-        </div>
-        <div className="rotating-center">
-            <div><img className="rotating-icon1" src="/assets/images/small_plus.svg"></img></div>
-        </div>        
-    
+      </div>
+
     </>
   )
 }
