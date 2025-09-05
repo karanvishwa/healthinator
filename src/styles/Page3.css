@@ -1,0 +1,30 @@
+.arrow{
+  width:100px;
+  height:100px;
+  border-radius: 50px;
+  background-color: #2FFFF5;
+  position: absolute;
+  top:50%;
+  right:160px;
+  box-shadow: -4px 4px 10px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover{
+    .right-arrow{
+      color: black;
+    }
+  }
+}
+
+.right-arrow{
+  transform: scale(3);
+  font-family: 'Roboto',sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  transition: color 100ms ease-in-out;
+}
+
+

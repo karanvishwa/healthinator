@@ -210,7 +210,7 @@
   cursor: pointer;
 }
 
-.options{
+.options-nav{
   visibility: hidden;
   display:flex;
   flex-direction: column;
@@ -225,13 +225,12 @@
   }
 }
 
-.nav-options:hover ~ .options{
+.nav-options:hover ~ .options-nav{
   visibility: visible;
 }
 
-.options a{
+.options-nav a{
   padding: 8px;
-  /* border-bottom: 0.1px solid lightblue; */
   &:hover{
     background-color: lightblue;
     cursor: pointer;
