@@ -1,13 +1,10 @@
-p{
-    font-family:  'Roboto',sans-serif;
+.color-rotate {
+  font-family:  'Roboto',sans-serif;
     margin-top: 150px;
     text-align: center;
     display:flex;
     align-items: center;
     justify-content: center;
-}
-
-.color-rotate {
     font-size: 60px;
     font-weight: bold;
     animation: spincolors 3s infinite linear;

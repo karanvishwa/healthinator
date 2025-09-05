@@ -12,7 +12,6 @@ function Page5() {
     <>
       <div className='nav-bar'>
         <HeaderNavigations />
-
       </div>
 
       <div className='HairLoss'>
@@ -20,29 +19,21 @@ function Page5() {
           <img className="rotating-icon" src="/assets/images/small_plus.svg"></img>
           Please answer these questions</div>
       </div>
+    
       <div className='qbox'>
-        {/* <div className='questionbox'>Question description
-         <div className='Q'>
-          {qboxes.map((B)=> <div key={B} className='QB'></div>)}
-         </div> 
-        </div> */}
         <div className='QB'>
           <div className="question">
             ChatBots Questions
-          </div></div>
+          </div>
+        </div>
         <div className='options'>
-
           <textarea id="text-box" className='textbox' placeholder='Text Here'></textarea>
-
         </div>
       </div>
 
       <div className='arrow' style={{ width: '150px' }}>
         <div className='right-arrow' style={{ transform: 'scale(2.5)' }} onClick={handleClick}>SUBMIT</div>
       </div>
-
-
-
     </>
   )
 }
