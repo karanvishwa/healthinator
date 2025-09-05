@@ -1,0 +1,57 @@
+.m-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box1{
+    margin-top: 2%;
+    height: 20em;
+    border-radius: 40px;
+    background-color: white;  
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    width:70%;
+    
+}
+.left-wraper{
+    width:30%;
+    padding-left: 8%;
+    
+}
+.main-d{
+    height: 50%;
+    display: flex;
+    align-items: end;
+    width:100%;
+    font-size: 50px;
+    font-family: 'Roboto','San-serif';
+    font-weight: bold; 
+}
+.sub-d{
+     height:20%;
+     width:100%;
+     font-size: 40px;
+    font-family: 'Roboto','San-serif';
+    
+}
+.right-wraper{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.bar-graph{
+    width: 70%;
+    height: 60%;    
+}
+svg:focus {
+    border: none;
+    outline: none;
+}
+.bar-graph:focus .bar-graph:hover .bar-graph:focus-visible{
+    outline: none;
+    border: none;
+
+}
