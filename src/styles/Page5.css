@@ -57,8 +57,14 @@
   transition: transform 50ms ease-in-out;
 }
 .question-options:hover{
+  cursor: pointer;
   transform: scale(1.01);
   outline: 2px solid blue;
+}
+
+.selected{
+  color: white;
+  background-color: rgb(85, 0, 255);
 }
 
 .textbox{
