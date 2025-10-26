@@ -24,7 +24,7 @@ function AppDetails() {
 
                 <h3 style={{ color: '#0a401a' }}>🌟 What is Healthinator? </h3><br />
 
-                <p className="text-details">Healthinator is an intelligent online tool designed to help you understand your health better. By answering a set of simple, guided questions about your symptoms, lifestyle, and medical history, Healthinator generates a personalized health report that gives you clarity about your current condition.</p> <br /><br />
+                <p className="text-details">Healthinator is an intelligent online tool designed to help you understand your health better. By answering a set of simple, guided questions about your symptoms, lifestyle, and medical history. Healthinator generates a personalized health report that gives you clarity about your current condition.</p> <br /><br />
 
                 <h3 style={{ color: '#0a401a' }}>⚡ How It Works </h3> <br />
 

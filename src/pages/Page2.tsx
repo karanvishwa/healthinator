@@ -5,7 +5,7 @@ import { HeaderNavigations } from "../components/HeaderNavigations"
 
 function Page2() {
 
-  const BOX = [['Hair Loss', 'hair'], ['Allergies', 'hand'], [], [], [], [], [], []]
+  const BOX = [['Hair', 'hair'], ['Allergies', 'hand'], ['Skin','Skin'], ['Mental Health',"Mental"], ['Digestive Health'," "], ["Chronic Condition",""], ["General Wellness",""], ["Infections",""]]
 
   const navigate = useNavigate()
 
